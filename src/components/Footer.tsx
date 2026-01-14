@@ -1,20 +1,52 @@
-import { UtensilsCrossed, MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
+import { UtensilsCrossed, MapPin, Phone, Mail, Instagram, Facebook, Truck } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer id="contact" className="bg-charcoal text-cream py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <UtensilsCrossed className="w-6 h-6 text-gold" />
               <span className="font-display text-xl font-semibold">Cucina & Co.</span>
-            </div>
+            </Link>
             <p className="text-cream/60 text-sm leading-relaxed">
               A celebration of Italian culinary tradition, reimagined with modern elegance. 
               Join us for an unforgettable dining experience.
             </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-display text-lg mb-4 text-gold">Explore</h4>
+            <div className="space-y-2 text-sm">
+              <Link 
+                to="/"
+                className="block text-cream/60 hover:text-gold transition-colors"
+              >
+                Home
+              </Link>
+              <Link 
+                to="/about"
+                className="block text-cream/60 hover:text-gold transition-colors"
+              >
+                About Us
+              </Link>
+              <Link 
+                to="/delivery"
+                className="block text-cream/60 hover:text-gold transition-colors"
+              >
+                Delivery
+              </Link>
+              <Link 
+                to="/contact"
+                className="block text-cream/60 hover:text-gold transition-colors"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
 
           {/* Hours */}
@@ -52,6 +84,13 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>hello@cucinaco.com</span>
               </a>
+              <Link 
+                to="/delivery"
+                className="flex items-center gap-3 text-cream/60 hover:text-gold transition-colors"
+              >
+                <Truck className="w-4 h-4" />
+                <span>Order Delivery</span>
+              </Link>
             </div>
           </div>
         </div>
