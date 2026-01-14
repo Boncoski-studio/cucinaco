@@ -75,7 +75,7 @@ const Hero = ({ onBookTable }: HeroProps) => {
             onClick={scrollToMenu}
             variant="outline"
             size="lg"
-            className="border-cream/30 text-cream hover:bg-cream/10 hover:border-cream/50 px-8 py-6 text-base transition-all"
+            className="border-gold/50 bg-transparent text-cream hover:bg-gold/10 hover:border-gold px-8 py-6 text-base transition-all"
           >
             Explore Menu
           </Button>
