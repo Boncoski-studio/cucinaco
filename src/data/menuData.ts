@@ -24,7 +24,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Thinly sliced beef tenderloin, arugula, capers, shaved Parmigiano',
     price: 22,
     category: 'antipasti',
-    image: 'https://images.unsplash.com/photo-1626200926434-a3d3c7c1ad38?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80',
     tags: ['gluten-free'],
   },
   {
